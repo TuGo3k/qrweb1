@@ -1,38 +1,18 @@
-.App {
-  text-align: center;
+/* Move the pagination dots further below the slides */
+.custom-swiper .swiper-pagination {
+  position: relative;
+  margin-top: 10px;
+   /* Increase this value to move the dots further down */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Optional: Customize pagination dot appearance */
+.swiper-pagination-bullet {
+  background-color: #d1d5db; /* Light gray color for the dots */
+  width: 12px;
+  height:12px;
+  margin: 0 5px; /* Add spacing between dots */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.swiper-pagination-bullet-active {
+  background-color: #ef4444; /* Red color for the active dot */
 }
