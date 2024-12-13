@@ -1,18 +1,32 @@
-/* Move the pagination dots further below the slides */
+/* Ensure the navigation arrows are visible and properly styled */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ef4444; /* Red color for the arrows */
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optional: Customize arrow icons */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
+  color: #fff; /* White color for the arrow icons */
+}
+
+/* Ensure arrows are above other elements */
+.swiper-button-prev,
+.swiper-button-next:hover {
+  z-index: 10;
+}
+
 .custom-swiper .swiper-pagination {
   position: relative;
   margin-top: 10px;
+  color: #ef4444;
    /* Increase this value to move the dots further down */
 }
 
-/* Optional: Customize pagination dot appearance */
-.swiper-pagination-bullet {
-  background-color: #d1d5db; /* Light gray color for the dots */
-  width: 12px;
-  height:12px;
-  margin: 0 5px; /* Add spacing between dots */
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #ef4444; /* Red color for the active dot */
-}
